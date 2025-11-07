@@ -14,6 +14,20 @@
         {% endblock %}
     </head>
     <body>
+
+        {# Block Header réutilisable #}
+        {% block header %}
+        <header>
+            {% include 'partials/_header.html.twig' %}
+        </header>
+        {% endblock %}
+
         {% block body %}{% endblock %}
+
+        {# Block Footer réutilisable #}
+        {% block footer %}
+            {% include 'partials/_footer.html.twig' %}
+        {% endblock %}
+
     </body>
 </html>
